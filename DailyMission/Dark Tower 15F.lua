@@ -1,6 +1,6 @@
 check=1
 TowerLoop={}
-name="°µÖ®Ëþ20²ã"
+name="°µÖ®Ëþ15²ã"
 state=0 --instance initial state
 LoopCount=0 --loop count initial
 Loop=0

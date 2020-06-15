@@ -52,16 +52,16 @@ end
 function HulangTemple.begin()
 	bot_stop()--Stop auto play--
 
-	printgame(0,255,255,"This is a fully automatic script ["..skyCity.chname.."]"..skyCity.donum.."times. Load in any places. If you press wrong, you have 5 seconds to stop loading.")
+	printgame(0,255,255,"This is a fully automatic script ["..HulangTemple.chname.."]"..HulangTemple.donum.."times. Load in any places. If you press wrong, you have 5 seconds to stop loading.")
 	local printtime = 2000
 	sleep(30)
 	printtime = printtime - 30
-	if skyCity.warning then
-		printgame(255,255,0,"Hint: "..skyCity.warning)
+	if HulangTemple.warning then
+		printgame(255,255,0,"Hint: "..HulangTemple.warning)
 		sleep(30)
 		printtime = printtime - 30
 	end
-	printgame(0,255,255,"Version: "..skyCity.version)
+	printgame(0,255,255,"Version: "..HulangTemple.version)
 	sleep(30)
 	printtime = printtime - 30
 	sleep(printtime)
