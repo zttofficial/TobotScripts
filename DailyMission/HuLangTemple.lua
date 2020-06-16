@@ -1,10 +1,10 @@
 check=1
 
 HulangTemple = {}
-HulangTemple.chname = "è™ç‹¼å¯º" 
+HulangTemple.chname = "»¢ÀÇËÂ" 
 HulangTemple.donum = 3 
 HulangTemple.buffname = nil 
-HulangTemple.targetthingname = "è™ç‹¼å¯ºå…ƒå®" 
+HulangTemple.targetthingname = "»¢ÀÇËÂÔª±¦" 
 HulangTemple.warning = nil 
 HulangTemple.version = "1.1.0.06142" 
 
@@ -44,8 +44,8 @@ end
 
 local function printTargetThingNum()
 	if HulangTemple.targetthingname then
-		printgame(0,255,255,"Now["..HulangTemple.targetthingname.."]numberï¼š"..item_if(HulangTemple.targetthingname))
-		printgame(0,255,255,"Instance["..HulangTemple.targetthingname.."]number:"..(item_if(HulangTemple.targetthingname) - targetthingnum))
+		printgame(0,255,255,"Now["..HulangTemple.targetthingname.."]number: "..item_if(HulangTemple.targetthingname))
+		printgame(0,255,255,"Instance["..HulangTemple.targetthingname.."]number: "..(item_if(HulangTemple.targetthingname) - targetthingnum))
 	end
 end
 
