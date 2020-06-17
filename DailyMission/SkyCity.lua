@@ -1,7 +1,7 @@
 check=1
 
 skyCity = {}
-skyCity.chname = "å¤©ç©ºä¹‹åŸŽ" --instance name--
+skyCity.chname = "Ìì¿ÕÖ®³Ç" --instance name--
 skyCity.donum = 5 --instance times--
 skyCity.buffname = nil --BUFF name, value is nil stands for no Buff requirements--
 skyCity.targetthingname = nil --Aim item name, value is nil stands for no item needed to be counted--
