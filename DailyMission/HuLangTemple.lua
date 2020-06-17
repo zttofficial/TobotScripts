@@ -1,10 +1,10 @@
 check=1
 
 HulangTemple = {}
-HulangTemple.chname = "»¢ÀÇËÂ"
+HulangTemple.chname = "è™ç‹¼å¯º"
 HulangTemple.donum = 3
 HulangTemple.buffname = nil
-HulangTemple.targetthingname = "»¢ÀÇËÂÔª±¦"
+HulangTemple.targetthingname = "è™ç‹¼å¯ºå…ƒå®"
 HulangTemple.warning = nil
 HulangTemple.version = "1.1.0.06142"
 
