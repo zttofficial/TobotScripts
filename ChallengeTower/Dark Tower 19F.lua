@@ -1,6 +1,6 @@
 check=1
 TowerLoop={}
-name="°µÖ®Ëþ15²ã"
+name="°µÖ®Ëþ19²ã"
 state=0 --instance initial state
 LoopCount=0 --loop count initial
 Loop=0
@@ -15,7 +15,7 @@ local function isIndunEnd(state)
 	elseif(state==8848) then
 		printgame(0,255,0,"Hint£ºloop mode")
 	else
-		printgame(0,255,0,"     Tower£º"..name.."Done!")
+		printgame(0,255,0,"     Tower£º"..name.." Done!")
 	end
 	sleep(500)
 end

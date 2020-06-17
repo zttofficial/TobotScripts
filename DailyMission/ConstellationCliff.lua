@@ -1,6 +1,6 @@
 check=1
 
-StarCliff = {}
+ConstellationCliff = {}
 maketeam()
 
 local function isInMap()
@@ -21,7 +21,7 @@ local function isbuffEnd()
 	return false
 end
 
-function StarCliff.begin()
+function ConstellationCliff.begin()
 	bot_stop()--Stop auto play--
 
 	printgame(0,255,0,"This Lua is fully automatic [Star Cliff] loaded 20 times on any map, if you press the wrong button, you have 5 seconds to stop loading")
@@ -109,6 +109,6 @@ function StarCliff.begin()
 	end
 end
 
-StarCliff.begin()
+ConstellationCliff.begin()
 
-return StarCliff
+return ConstellationCliff

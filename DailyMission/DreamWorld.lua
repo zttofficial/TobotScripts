@@ -4,12 +4,12 @@ timer=0
 bossdie=0
 goback=0
 
-time1=410  
-time2=440  
-time3=470  
-time4=510
+time1=430
+time2=470
+time3=500  
+time4=540
 --These are the time when Dream World 1, 2, 3, 4 map went to Dream World 5
---e.g. When the program starts 410 seconds, if the character is still on map 1, return map 5
+--e.g. When the program starts 430 seconds, if the character is still on map 1, return map 5
 
 local function isInMap()--check whether character in aim map
 getmapnow=getmapid()
@@ -53,7 +53,7 @@ end
 
 
 local function timelast(mapid,timer)--which map to go
---time1=410  time2=440  time3=470  time4=510
+--time1=430  time2=470  time3=500  time4=540
 	if mapid==58301 and timer>=time1*10
 	or mapid==58302 and timer>=time2*10
 	or mapid==58303 and timer>=time3*10
