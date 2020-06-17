@@ -71,7 +71,7 @@ scripts = {
 	-- "3-4.txt",
 	-- "4-5.txt",
 	-- "5-出口.txt",
-	-- "空白脚本.txt",
+	-- "Empty Script.txt",
 	-- "5-4.txt",
 	-- "4-3.txt",
 	-- "3-2.txt",
@@ -156,7 +156,7 @@ function DreamWorld.begin()
 			if getmapnow==58301 then
 				if goback==1 then
 					script_txt_loaddata(scripts[7],0)
-					--空白脚本
+					--Empty Script
 				else
 					script_txt_loaddata(scripts[2],0)
 					--script_txt_load("梦源 一.txt",0)
@@ -169,7 +169,7 @@ function DreamWorld.begin()
 					--Go back to 1
 				elseif goback==2 then
 					script_txt_loaddata(scripts[7],0)
-					--空白脚本
+					--Empty Script
 				else
 					script_txt_loaddata(scripts[3],0)
 					--script_txt_load("梦源 二.txt",0)
@@ -182,7 +182,7 @@ function DreamWorld.begin()
 					--Go back to 2
 				elseif goback==3 then
 					script_txt_loaddata(scripts[7],0)
-					--空白脚本
+					--Empty Script
 				else
 					script_txt_loaddata(scripts[4],0)
 					--script_txt_load("梦源 三.txt",0)
@@ -199,7 +199,7 @@ function DreamWorld.begin()
 					--Go back to 3
 				elseif goback==4 then
 					script_txt_loaddata(scripts[7],0)
-					--空白脚本
+					--Empty Script
 					sleep(5000)
 					timer=timer+50
 					goback=gobackwhere()
