@@ -8,13 +8,6 @@ exit()
 end
 plane(1210)
 
-suipians = {
-	"低级时空血脉水晶",
-	"原始时空血脉水晶",
-	"最高级时空血脉水晶",
-	
-}
-
 while(getmapid() ~= 18400.0 and getx() < 536.0 )do
 -- Wait for entry aim map
 sleep(5000)
@@ -32,16 +25,6 @@ if (getmapid() == 64400.0 and indun_get(322.0) == 2)then
 printgame(255,255,0,"Done twice")
 break
 end
-	
-	for i=1,#suipians do
-		if item_if(suipians[i])>0 then
-			item_use(suipians[i])
-			item_use(suipians[i])
-			sleep(100)
-			timer=timer+1
-		end
-	end
-
 end
 
 
