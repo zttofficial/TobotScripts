@@ -1,10 +1,10 @@
 check=1
 
 HulangTemple = {}
-HulangTemple.chname = "虎狼寺"
+HulangTemple.chname = "Tiger Temple"
 HulangTemple.donum = 3
 HulangTemple.buffname = nil
-HulangTemple.targetthingname = "虎狼寺元宝"
+HulangTemple.targetthingname = "Tiger Temple Ingot"
 HulangTemple.warning = nil
 HulangTemple.version = "1.1.0.06142"
 

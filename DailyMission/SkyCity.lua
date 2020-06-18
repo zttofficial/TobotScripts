@@ -1,17 +1,17 @@
 check=1
 
 skyCity = {}
-skyCity.chname = "天空之城" --instance name--
+skyCity.chname = "Sky Castle" --instance name--
 skyCity.donum = 5 --instance times--
 skyCity.buffname = nil --BUFF name, value is nil stands for no Buff requirements--
 skyCity.targetthingname = nil --Aim item name, value is nil stands for no item needed to be counted--
-skyCity.warning = nil --Hint, value is nil stans for no hint--
+skyCity.warning = nil --Hint, value is nil stands for no hint--
 skyCity.version = "1.0.0.06241" --version number--
 
 local function isInMap()
 	if getmapid() == 93100.0
-	or getmapid() == 93101.0 
-	or getmapid() == 93102.0 
+	or getmapid() == 93101.0
+	or getmapid() == 93102.0
 	or getmapid() == 93103.0 then
 		return true
 	end
@@ -26,11 +26,11 @@ local function planeToEntry()
 end
 
 local function isNumEnd()
-	if indun_get(skyCity.chname) == skyCity.donum 
-		and not isInMap() then 
+	if indun_get(skyCity.chname) == skyCity.donum
+		and not isInMap() then
 		return true
 	end
-	
+
 	return false
 end
 
@@ -67,18 +67,18 @@ function skyCity.begin()
 	sleep(printtime)
 	maketeam()
 	sleep(3000)
-	
+
 	if not isInMap() then
 		planeToEntry()
 	end
-	
+
 	ini_change("tobot_scriptbot",1)--Start--
 
 	intTargetThingNum()
 
 	while(true)
 	do
-		sleep(30)	
+		sleep(30)
 		mapid_now = getmapid()
 		if mapid_now ~= mapid_last then--Avoid system down--
 			mapid_last = mapid_now
@@ -106,7 +106,7 @@ function skyCity.begin()
 					if getmapid() ~= 93100.0 then
 						break
 					end
-					
+
 					if door_if(1568,1487) == 1 then
 						bot_stop()--Stop auto play--
 						ini_change("ban_hit_mob",1)--Not allow attack--
@@ -116,7 +116,7 @@ function skyCity.begin()
 					end
 				end
 			end
-			
+
 			if getmapid() == 93101.0 then --Entry instance--
 				bot_stop()--Stop auto play--
 				ini_change("ban_hit_mob",0)--Allow attack--
@@ -128,7 +128,7 @@ function skyCity.begin()
 					if getmapid() ~= 93101.0 then
 						break
 					end
-					
+
 					if door_if(840,959) == 1 then
 						bot_stop()--Stop auto play--
 						-- ini_change("ban_hit_mob",1)--Not allow attack--
@@ -139,7 +139,7 @@ function skyCity.begin()
 					end
 				end
 			end
-			
+
 			if getmapid() == 93102.0 then --Entry instance--
 				bot_stop()--Stop auto play--
 				ini_change("ban_hit_mob",0)--Allow attack--
@@ -151,7 +151,7 @@ function skyCity.begin()
 					if getmapid() ~= 93102.0 then
 						break
 					end
-					
+
 					if door_if(1624,1487) == 1 then
 						bot_stop()--Stop auto play--
 						ini_change("ban_hit_mob",1)--Not allow attack--
@@ -161,7 +161,7 @@ function skyCity.begin()
 					end
 				end
 			end
-			
+
 			if getmapid() == 93103.0 then --Entry instance--
 				bot_stop()--Stop auto play--
 				ini_change("ban_hit_mob",0)--Allow attack--
@@ -173,7 +173,7 @@ function skyCity.begin()
 					if getmapid() ~= 93103.0 then
 						break
 					end
-					
+
 					if door_if(797,959) == 1 then
 						bot_stop()--Stop auto play--
 						-- ini_change("ban_hit_mob",1)--Not allow attack--
