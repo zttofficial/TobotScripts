@@ -1,10 +1,10 @@
 check=1
 
 HulangTemple = {}
-HulangTemple.chname = "»¢ÀÇËÂ"
+HulangTemple.chname = "è™ç‹¼å¯º"
 HulangTemple.donum = 3
 HulangTemple.buffname = nil
-HulangTemple.targetthingname = "»¢ÀÇËÂÔª±¦"
+HulangTemple.targetthingname = "è™ç‹¼å¯ºå…ƒå®"
 HulangTemple.warning = nil
 HulangTemple.version = "1.1.0.06142"
 
@@ -52,7 +52,7 @@ end
 function HulangTemple.begin()
 	bot_stop()--Stop auto play--
 
-	printgame(0,255,255,"This is a fully automatic script ["..HulangTemple.chname.."]"..HulangTemple.donum.." times. Load in any places. If you press wrong, you have 5 seconds to stop loading.")
+	printgame(0,255,255,"This is a fully automatic script ["..HulangTemple.chname.."] "..HulangTemple.donum.." times. Load in any places. If you press wrong, you have 5 seconds to stop loading.")
 	local printtime = 2000
 	sleep(30)
 	printtime = printtime - 30
