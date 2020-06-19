@@ -20,7 +20,7 @@ local function isInMap()
 end
 
 local function isNumEnd()
-	if indun_get("¼ª¶÷µÙÑÇ²Ö¿â") == 3.0 then 
+	if indun_get("å‰æ©è’‚äºšä»“åº“") == 3.0 then 
 		return true
 	end
 	return false
