@@ -1,10 +1,10 @@
 check=1
 
 HulangTemple = {}
-HulangTemple.chname = "虎狼寺"
+HulangTemple.chname = "Tiger Temple"
 HulangTemple.donum = 3
 HulangTemple.buffname = nil
-HulangTemple.targetthingname = "虎狼寺元宝"
+HulangTemple.targetthingname = "Tiger Temple Ingot"
 HulangTemple.warning = nil
 HulangTemple.version = "1.1.0.06142"
 
@@ -19,7 +19,7 @@ local function isInMap()
 end
 
 local function isNumEnd()
-	if indun_get(HulangTemple.chname) == HulangTemple.donum
+	if indun_get(123) == HulangTemple.donum
 		and not isInMap() then
 		return true
 	end

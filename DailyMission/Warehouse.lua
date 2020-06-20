@@ -20,7 +20,8 @@ local function isInMap()
 end
 
 local function isNumEnd()
-	if indun_get("吉恩蒂亚仓库") == 3.0 then 
+	if indun_get(186) == 3.0 then 
+		printgame(0,255,255,"No more chance.")
 		return true
 	end
 	return false

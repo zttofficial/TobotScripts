@@ -1,7 +1,7 @@
 check=1
 
 skyCity = {}
-skyCity.chname = "天空之城" --instance name--
+skyCity.chname = "Sky Castle" --instance name--
 skyCity.donum = 5 --instance times--
 skyCity.buffname = nil --BUFF name, value is nil stands for no Buff requirements--
 skyCity.targetthingname = nil --Aim item name, value is nil stands for no item needed to be counted--
@@ -26,7 +26,7 @@ local function planeToEntry()
 end
 
 local function isNumEnd()
-	if indun_get(skyCity.chname) == skyCity.donum
+	if indun_get(745) == skyCity.donum
 		and not isInMap() then
 		return true
 	end
@@ -88,7 +88,7 @@ function skyCity.begin()
 					ini_change("tobot_scriptbot", 0)--Stop auto play--
 					ini_change("ban_hit_mob",0)--Allow attack--
 					sleep(1000)
-					printgame(0,255,255,"["..skyCity.chname.."] have been done" ..skyCity.donum.." times, end.")
+					printgame(0,255,255,"["..skyCity.chname.."] have been done " ..skyCity.donum.." times, end.")
 					return
 				end
 				script_txt_loaddata("D6C7C4DCD7AAC9ED2CD7F3C5DCCAB12C3939362E352C313437312E30382CD3D2C5DC2CC3BBD3D0B8BDBCD3B2CECAFD2C0D0AD6C7C4DCD7AAC9ED2CD3D2C5DCCAB12C323139372E37312C313437312E30382CD7F3C5DC2CC3BBD3D0B8BDBCD3B2CECAFD2C0D0ABDF8C8EBB4ABCBCDC3C52CD7F326D3D2CAB12C313634322E36312C313437312E30382CB2BBB1E42CC3BBD3D0B8BDBCD3B2CECAFD2C", 1)
