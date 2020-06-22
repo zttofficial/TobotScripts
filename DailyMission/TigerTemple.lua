@@ -38,14 +38,14 @@ local targetthingnum = 0
 
 local function intTargetThingNum()
 	if HulangTemple.targetthingname then
-		targetthingnum = item_if(HulangTemple.targetthingname)
+		targetthingnum = item_if(430311411)
 	end
 end
 
 local function printTargetThingNum()
 	if HulangTemple.targetthingname then
-		printgame(0,255,255,"Now ["..HulangTemple.targetthingname.."] number: "..item_if(HulangTemple.targetthingname))
-		printgame(0,255,255,"Instance ["..HulangTemple.targetthingname.."] number: "..(item_if(HulangTemple.targetthingname) - targetthingnum))
+		printgame(0,255,255,"Now ["..HulangTemple.targetthingname.."] number: "..item_if(430311411))
+		printgame(0,255,255,"Instance ["..HulangTemple.targetthingname.."] number: "..(item_if(430311411) - targetthingnum))
 	end
 end
 
