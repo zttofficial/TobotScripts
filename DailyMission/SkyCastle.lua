@@ -1,12 +1,12 @@
 check=1
 
-shyCastle = {}
-shyCastle.chname = "Sky Castle" --instance name--
-shyCastle.donum = 15 --instance times--
-shyCastle.buffname = nil --BUFF name, value is nil stands for no Buff requirements--
-shyCastle.targetthingname = nil --Aim item name, value is nil stands for no item needed to be counted--
-shyCastle.warning = nil --Hint, value is nil stands for no hint--
-shyCastle.version = "1.0.0.06241" --version number--
+skyCastle = {}
+skyCastle.chname = "Sky Castle" --instance name--
+skyCastle.donum = 5 --instance times--
+skyCastle.buffname = nil --BUFF name, value is nil stands for no Buff requirements--
+skyCastle.targetthingname = nil --Aim item name, value is nil stands for no item needed to be counted--
+skyCastle.warning = nil --Hint, value is nil stands for no hint--
+skyCastle.version = "1.0.0.06241" --version number--
 
 local function isInMap()
 	if getmapid() == 93100.0
@@ -26,7 +26,7 @@ local function planeToEntry()
 end
 
 local function isNumEnd()
-	if indun_get(745) == shyCastle.donum
+	if indun_get(745) == skyCastle.donum
 		and not isInMap() then
 		return true
 	end
@@ -37,31 +37,31 @@ end
 local targetthingnum = 0
 
 local function intTargetThingNum()
-	if shyCastle.targetthingname then
-		targetthingnum = item_if(shyCastle.targetthingname)
+	if skyCastle.targetthingname then
+		targetthingnum = item_if(skyCastle.targetthingname)
 	end
 end
 
 local function printTargetThingNum()
-	if shyCastle.targetthingname then
-		printgame(0,255,255,"Now ["..shyCastle.targetthingname.."] number:" ..item_if(shyCastle.targetthingname))
-		printgame(0,255,255,"Instance["..shyCastle.targetthingname.."] number:" ..(item_if(shyCastle.targetthingname) - targetthingnum))
+	if skyCastle.targetthingname then
+		printgame(0,255,255,"Now ["..skyCastle.targetthingname.."] number:" ..item_if(skyCastle.targetthingname))
+		printgame(0,255,255,"Instance["..skyCastle.targetthingname.."] number:" ..(item_if(skyCastle.targetthingname) - targetthingnum))
 	end
 end
 
-function shyCastle.begin()
+function skyCastle.begin()
 	bot_stop()--Stop auto play--
 
-	printgame(0,255,255,"This is a fully automatic script ["..shyCastle.chname.."] "..shyCastle.donum.." times. Load in any places. If you press wrong, you have 5 seconds to stop loading.")
+	printgame(0,255,255,"This is a fully automatic script ["..skyCastle.chname.."] "..skyCastle.donum.." times. Load in any places. If you press wrong, you have 5 seconds to stop loading.")
 	local printtime = 2000
 	sleep(30)
 	printtime = printtime - 30
-	if shyCastle.warning then
-		printgame(255,255,0,"Hint: "..shyCastle.warning)
+	if skyCastle.warning then
+		printgame(255,255,0,"Hint: "..skyCastle.warning)
 		sleep(30)
 		printtime = printtime - 30
 	end
-	printgame(0,255,255,"Version: "..shyCastle.version)
+	printgame(0,255,255,"Version: "..skyCastle.version)
 	sleep(30)
 	printtime = printtime - 30
 	sleep(printtime)
@@ -88,7 +88,7 @@ function shyCastle.begin()
 					ini_change("tobot_scriptbot", 0)--Stop auto play--
 					ini_change("ban_hit_mob",0)--Allow attack--
 					sleep(1000)
-					printgame(0,255,255,"["..shyCastle.chname.."] have been done " ..shyCastle.donum.." times, end.")
+					printgame(0,255,255,"["..skyCastle.chname.."] have been done " ..skyCastle.donum.." times, end.")
 					return
 				end
 				script_txt_loaddata("D6C7C4DCD7AAC9ED2CD7F3C5DCCAB12C3939362E352C313437312E30382CD3D2C5DC2CC3BBD3D0B8BDBCD3B2CECAFD2C0D0AD6C7C4DCD7AAC9ED2CD3D2C5DCCAB12C323139372E37312C313437312E30382CD7F3C5DC2CC3BBD3D0B8BDBCD3B2CECAFD2C0D0ABDF8C8EBB4ABCBCDC3C52CD7F326D3D2CAB12C313634322E36312C313437312E30382CB2BBB1E42CC3BBD3D0B8BDBCD3B2CECAFD2C", 1)
@@ -188,6 +188,6 @@ function shyCastle.begin()
 	end
 end
 
-shyCastle.begin()
+skyCastle.begin()
 
-return shyCastle
+return skyCastle
